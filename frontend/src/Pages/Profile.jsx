@@ -22,16 +22,19 @@ export default function Profile(){
 
     return(
         <div>
-            <Stack
+            <Stack 
+                
                 h={300}
                 bg="var(--mantine-color-body)"
-                align="stretch"
+                align="center"
                 justify="center"
                 gap="md"
             >
+                <Avatar src={user.avatar} alt="its my profile" />
                 <Text> {user.name}</Text>
                 <Text> {user.email}</Text>
-                <Avatar src={user.avatar} alt="its my profile" />
+                <Text> {user._id}</Text>
+
 
             </Stack>
         </div>
