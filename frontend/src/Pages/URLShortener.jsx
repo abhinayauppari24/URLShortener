@@ -12,7 +12,7 @@ export default function URLShortener() {
         "originalUrl" :"",
         "expiresAt":"",
         "title":"",
-        "customURL":""
+        "customUrl":""
 
     })
     const [response, setResponse] = useState(null);
@@ -49,7 +49,7 @@ export default function URLShortener() {
 
                     <TextInput
                         onChange={(e) => {
-                            setInput({...input,customURL : e.target.value});
+                            setInput({...input,customUrl : e.target.value});
                         }}
                     size="md"
                     label="Customize your link"
